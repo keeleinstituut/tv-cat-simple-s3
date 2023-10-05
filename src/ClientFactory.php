@@ -41,6 +41,7 @@ use Aws\Sts\StsClient;
  * - ua_append
  * - validate
  * - version
+ * - use_path_style_endpoint
  *
  * Please see the complete config documentation here:
  *
@@ -108,6 +109,7 @@ final class ClientFactory
             'ua_append',
             'validate',
             'version',
+            'use_path_style_endpoint'
         ];
         
         foreach (array_keys($config) as $key) {
